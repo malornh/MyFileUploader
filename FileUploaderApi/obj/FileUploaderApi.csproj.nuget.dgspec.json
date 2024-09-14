@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj": {}
+    "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj": {
+    "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
+        "projectUniqueName": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
         "projectName": "FileUploaderApi",
-        "projectPath": "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
+        "projectPath": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
         "packagesPath": "C:\\Users\\ZIVKO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\obj\\",
+        "outputPath": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ZIVKO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|c:\\users\\zivko\\desktop\\fileuploaderapi\\fileuploaderapi\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\models\\filedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|solutionrelative:fileuploaderapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF9F9949-4FC9-4957-AC8B-A23BE2BC5AF1}|FileUploaderApi\\FileUploaderApi.csproj|C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\fileuploaderapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 57,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "FileUploaderApi\\Services\\FileService.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\appsettings.json",
               "RelativeDocumentMoniker": "FileUploaderApi\\appsettings.json",
@@ -75,11 +75,12 @@
               "RelativeToolTip": "FileUploaderApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-13T08:44:32.808Z"
+              "WhenOpened": "2024-09-13T08:44:32.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FileDetails.cs",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Models\\FileDetails.cs",
               "RelativeDocumentMoniker": "FileUploaderApi\\Models\\FileDetails.cs",
@@ -91,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Program.cs",
               "RelativeDocumentMoniker": "FileUploaderApi\\Program.cs",
@@ -103,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FilesController.cs",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Controllers\\FilesController.cs",
               "RelativeDocumentMoniker": "FileUploaderApi\\Controllers\\FilesController.cs",
@@ -115,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Services\\IFileService.cs",
               "RelativeDocumentMoniker": "FileUploaderApi\\Services\\IFileService.cs",
@@ -127,15 +128,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "FileUploaderApi\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\Properties\\launchSettings.json",
               "RelativeToolTip": "FileUploaderApi\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwCAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-11T18:25:10.322Z"
+              "WhenOpened": "2024-09-11T18:25:10.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

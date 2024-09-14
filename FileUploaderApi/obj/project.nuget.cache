@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6t5A1CNAqNDbfMGbTe8ytFvTAIdKVghU5X4Si4fp/XxtiZqsMYnx/aKSEq4Nn9m1uiM7eFdxm2THAac+7KFBig==",
+  "dgSpecHash": "nkBzNtYFWaDX2fwpR2GKd80+jBKqgFaiBl9tTJxkGPm1h+pGjoskpZysI39f2FYSq6npUStCqcFa1AvAXJRLhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZIVKO\\source\\repos\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
+  "projectFilePath": "C:\\Users\\ZIVKO\\Desktop\\FileUploaderApi\\FileUploaderApi\\FileUploaderApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZIVKO\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ZIVKO\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
