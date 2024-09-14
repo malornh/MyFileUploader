@@ -1,0 +1,254 @@
+﻿@* Views/Home/Index.cshtml *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            padding: 1em;
+            color: white;
+            text-align: right;
+        }
+        nav a {
+            color: white;
+            margin-left: 1em;
+            text-decoration: none;
+        }
+        .container {
+            margin: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 1em;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .file-upload {
+            margin-top: 1em;
+        }
+        .file-upload input {
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Menu -->
+    <nav id="navbar">
+        <a href="#" id="register-link">Register</a>
+        <a href="#" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display: none;">Logout</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- File Upload Section -->
+        <div class="file-upload">
+            <h2>Upload File(s)</h2>
+            <input type="file" id="file-input" multiple>
+            <button id="upload-button">Upload</button>
+        </div>
+
+        <!-- Files Table -->
+        <table id="file-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Extension</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Files will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const apiBaseUrl = "/api"; // Assuming your API routes are here
+        let jwtToken = null;
+
+        // Register User
+        document.getElementById('register-link').addEventListener('click', async () => {
+            const email = prompt("Enter email:");
+            const password = prompt("Enter password:");
+            if (email && password) {
+                await register(email, password);
+            }
+        });
+
+        // Login User
+        document.getElementById('login-link').addEventListener('click', async () => {
+            const email = prompt("Enter email:");
+            const password = prompt("Enter password:");
+            if (email && password) {
+                await login(email, password);
+            }
+        });
+
+        // Logout User
+        document.getElementById('logout-link').addEventListener('click', () => {
+            jwtToken = null;
+            alert("Logged out!");
+            updateNav();
+            clearFilesTable();
+        });
+
+        // Upload Files
+        document.getElementById('upload-button').addEventListener('click', async () => {
+            const files = document.getElementById('file-input').files;
+            if (files.length > 0) {
+                await uploadFiles(files);
+            }
+        });
+
+        // Load files after login
+        async function loadFiles() {
+            try {
+                const response = await fetch(`${apiBaseUrl}/files`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${jwtToken}`
+                    }
+                });
+                const files = await response.json();
+                populateFilesTable(files);
+            } catch (error) {
+                console.error("Error loading files:", error);
+            }
+        }
+
+        // Populate files table
+        function populateFilesTable(files) {
+            const tableBody = document.querySelector("#file-table tbody");
+            tableBody.innerHTML = ""; // Clear table
+
+            files.forEach(file => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${file.name}</td>
+                    <td>${file.extension}</td>
+                    <td><button onclick="deleteFile(${file.id})">Delete</button></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Clear files table
+        function clearFilesTable() {
+            document.querySelector("#file-table tbody").innerHTML = "";
+        }
+
+        // Register API call
+        async function register(email, password) {
+            try {
+                const response = await fetch(`${apiBaseUrl}/users/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                if (response.ok) {
+                    alert("Registration successful!");
+                } else {
+                    const error = await response.json();
+                    alert("Error: " + error.message);
+                }
+            } catch (error) {
+                console.error("Error registering user:", error);
+            }
+        }
+
+        // Login API call
+        async function login(email, password) {
+            try {
+                const response = await fetch(`${apiBaseUrl}/users/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                if (response.ok) {
+                    jwtToken = await response.text();
+                    alert("Login successful!");
+                    updateNav();
+                    loadFiles();
+                } else {
+                    alert("Login failed!");
+                }
+            } catch (error) {
+                console.error("Error logging in:", error);
+            }
+        }
+
+        // Delete file
+        async function deleteFile(fileId) {
+            try {
+                await fetch(`${apiBaseUrl}/files/${fileId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${jwtToken}`
+                    }
+                });
+                alert("File deleted!");
+                loadFiles(); // Reload files after deletion
+            } catch (error) {
+                console.error("Error deleting file:", error);
+            }
+        }
+
+        // Upload files API call
+        async function uploadFiles(files) {
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append("files", files[i]);
+            }
+
+            try {
+                const response = await fetch(`${apiBaseUrl}/files/multiple`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${jwtToken}`
+                    },
+                    body: formData
+                });
+                if (response.ok) {
+                    alert("Files uploaded!");
+                    loadFiles();
+                } else {
+                    const error = await response.json();
+                    alert("Error uploading files: " + error.message);
+                }
+            } catch (error) {
+                console.error("Error uploading files:", error);
+            }
+        }
+
+        // Update navigation based on login status
+        function updateNav() {
+            if (jwtToken) {
+                document.getElementById('login-link').style.display = 'none';
+                document.getElementById('register-link').style.display = 'none';
+                document.getElementById('logout-link').style.display = 'inline';
+            } else {
+                document.getElementById('login-link').style.display = 'inline';
+                document.getElementById('register-link').style.display = 'inline';
+                document.getElementById('logout-link').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
